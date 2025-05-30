@@ -1,5 +1,6 @@
 ﻿class program
 {
+    #region Pattern 1: Solid Square
     public static void Pattern1(int num)
     {
 
@@ -13,6 +14,9 @@
             Console.WriteLine();
         }
     }
+    #endregion     Print n rows and n columns of asterisks.
+
+    #region Pattern 2: Right-Angled Triangle(increasing)
     public static void Pattern2(int num)
     {
         for (int i = 0; i < num; i++)
@@ -24,6 +28,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Rows increase one star at a time.
+
+    #region Pattern 3: Number Triangle
     public static void Pattern3(int num)
     {
         for (int i = 1; i <= num; i++)
@@ -35,6 +42,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Row number increases; each row prints numbers from 1 to that row number.
+
+    #region Pattern 4: Repeating Row Number
     public static void Pattern4(int num)
     {
         for (int i = 1; i <= num; i++)
@@ -46,6 +56,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Each row prints its row number multiple times.
+
+    #region Pattern 5: Inverted Right-Angled Triangle
     public static void Pattern5(int num)
     {
         for (int i = 1; i <= num; i++)
@@ -57,7 +70,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Starts with full stars and reduces one each row.
 
+    #region Pattern 6: Inverted Number Pattern
     public static void Pattern6(int num)
     {
         for (int i = 1; i <= num; i++)
@@ -69,7 +84,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Decreasing numbers each row.
 
+    #region Pattern 7: Pyramid
     public static void Pattern7(int num)
     {
         for (int i = 0; i < num; i++)
@@ -93,7 +110,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Centered pyramid of stars with odd number count.
 
+    #region Pattern 8: Inverted Pyramid
     public static void Pattern8(int num)
     {
         for (int i = 0; i < num; i++)
@@ -117,6 +136,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Reversed version of Pattern 7.
+    
+    #region Pattern 9: Diamond Half
 
     public static void Pattern9(int num)
     {
@@ -135,6 +157,9 @@
         }
 
     }
+    #endregion Increasing then decreasing star pattern.
+    
+    # region Pattern 10: Binary Triangle
 
     public static void Pattern10(int num)
     {
@@ -158,6 +183,10 @@
         }
     }
 
+    #endregion Alternates between 1 and 0 per row.
+    
+    # region Pattern 11: Number Palindrome with Space
+
     public static void Pattern11(int num)
     {
         int space = 2 * (num - 1);
@@ -175,7 +204,7 @@
                 Console.Write(" ");
             }
 
-            //number
+            // number
             for (int j = i; j >= 1; j--)
             {
                 Console.Write(j);
@@ -184,6 +213,9 @@
             space -= 2;
         }
     }
+    #endregion Number pyramid with spaces in the middle, mirrored.
+    
+    # region Pattern 12: Incrementing Numbers
 
     public static void Pattern12(int num)
     {
@@ -198,6 +230,10 @@
             Console.WriteLine();
         }
     }
+    #endregion Continuously increases number through triangle.
+    
+    # region Pattern 13: Alphabet Triangle
+
     public static void Pattern13(int num)
     {
         for (int i = 0; i <= num; i++)
@@ -209,6 +245,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Adds one more letter each row starting from A.
+    
+    # region Pattern 14: Reverse Alphabet Triangle
 
     public static void Pattern14(int num)
     {
@@ -221,7 +260,9 @@
             Console.WriteLine();
         }
     }
-
+    #endregion Letters decrease each row.
+    
+    # region Pattern 15: Repeated Characters by Row
     public static void Pattern15(int num)
     {
         for (int i = 0; i < num; i++)
@@ -235,6 +276,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Row index used to repeat same alphabet.
+         
+    # region Pattern 16: Symmetrical Alphabet Pyramid
 
     public static void Pattern16(int num)
     {
@@ -270,6 +314,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Pyramid using characters in ascending then descending order.
+    
+    # region Pattern 17: Reverse Letter Triangle
 
     public static void Pattern17(int num)
     {
@@ -284,6 +331,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Starts from a decreasing character to E.
+    
+    # region Pattern 18: Butterfly Pattern
 
     public static void Pattern18(int num)
     {
@@ -328,6 +378,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Stars on the sides with increasing/decreasing space.
+    
+    # region Pattern 19: Hourglass/Double Triangle
 
     public static void Pattern19(int num)
     {
@@ -367,6 +420,9 @@
             Console.WriteLine();
         }
     }
+    #endregion Two triangles with spaces in between.
+    
+    # region Pattern 20: Hollow Square
 
     public static void Pattern20(int num)
     {
@@ -388,6 +444,9 @@
         }
     }
 
+    #endregion Only border is printed.
+    
+    # region Pattern 21: Concentric Number Square
     public static void Pattern21(int num)
     {
         for (int i = 0; i < 2 * num - 1; i++)
@@ -404,13 +463,32 @@
             Console.WriteLine();
         }
     }
+    # endregion Layers of decreasing numbers to form a square pattern.
     static void Main(string[] args)
     {
-        //int n;
         Console.WriteLine("Please enter the Number");
         var num = Convert.ToInt32(Console.ReadLine());
       
+        Pattern1(num);
+        Pattern2(num);
+        Pattern3(num);
+        Pattern4(num);
+        Pattern5(num);
+        Pattern6(num);
+        Pattern7(num);
+        Pattern8(num);
+        Pattern9(num);
+        Pattern10(num);
+        Pattern11(num);
+        Pattern12(num);
+        Pattern13(num);
+        Pattern14(num);
         Pattern15(num);
-     
+        Pattern16(num);
+        Pattern17(num);
+        Pattern18(num);
+        Pattern19(num);
+        Pattern20(num);
+        Pattern21(num);
     }
 }

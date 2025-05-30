@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RaviDhileeban\\source\\repos\\Patterns\\Patterns\\Patterns.csproj": {}
+    "D:\\zPersonalProject\\Patterns\\Patterns\\Patterns\\Patterns.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RaviDhileeban\\source\\repos\\Patterns\\Patterns\\Patterns.csproj": {
+    "D:\\zPersonalProject\\Patterns\\Patterns\\Patterns\\Patterns.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RaviDhileeban\\source\\repos\\Patterns\\Patterns\\Patterns.csproj",
+        "projectUniqueName": "D:\\zPersonalProject\\Patterns\\Patterns\\Patterns\\Patterns.csproj",
         "projectName": "Patterns",
-        "projectPath": "C:\\Users\\RaviDhileeban\\source\\repos\\Patterns\\Patterns\\Patterns.csproj",
+        "projectPath": "D:\\zPersonalProject\\Patterns\\Patterns\\Patterns\\Patterns.csproj",
         "packagesPath": "C:\\Users\\RaviDhileeban\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RaviDhileeban\\source\\repos\\Patterns\\Patterns\\obj\\",
+        "outputPath": "D:\\zPersonalProject\\Patterns\\Patterns\\Patterns\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RaviDhileeban\\AppData\\Roaming\\NuGet\\NuGet.Config",
